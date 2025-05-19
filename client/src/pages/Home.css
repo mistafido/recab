@@ -1,0 +1,15 @@
+#container {
+    background-color: gold;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    height: 100%;
+}
+
+#container strong {
+    font-size: 34px;
+    cursor: pointer;
+}

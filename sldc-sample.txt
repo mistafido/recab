@@ -1,0 +1,92 @@
+1. Planning and Requirement Analysis
+Activities:
+Identify stakeholders: Users, SOS contacts, cab platforms, and developers.
+Gather functional and non-functional requirements.
+Feasibility study:
+Technical feasibility: Evaluate the integration of APIs for cab platforms and SMS/email services.
+Operational feasibility: Assess user adoption and ease of use.
+Financial feasibility: Budget for development, deployment, and maintenance.
+Deliverables:
+Software Requirements Specification (SRS) document.
+Project roadmap and timelines.
+2. System Design
+Activities:
+Design the system architecture:
+Client-side: Ionic framework for cross-platform compatibility.
+Backend: Node.js for API handling and MongoDB as the database.
+UI/UX design:
+Create wireframes for screens (e.g., Home, Contacts, and Settings).
+Design interactive elements for ride tracking and SOS triggers.
+Database design:
+Define schemas for Users, Rides, and Alerts collections.
+Third-party integration:
+Plan API calls for cab platforms (e.g., Uber API).
+Setup SMS/email services for notifications.
+Deliverables:
+System architecture diagram.
+Wireframes and UI/UX mockups.
+Database schema and ER diagrams.
+3. Development
+Activities:
+Sprint 1:
+Implement user authentication and SOS contact management.
+Develop backend APIs for user management.
+Sprint 2:
+Integrate cab platform APIs for ride details and tracking.
+Build real-time location tracking using Ionic Geolocation.
+Sprint 3:
+Implement the SOS alert system (manual and automated).
+Develop notification mechanisms (SMS and email).
+Sprint 4:
+Finalize UI/UX with feedback from stakeholders.
+Optimize for performance and cross-platform compatibility.
+Deliverables:
+Fully functional application modules for each sprint.
+API endpoints for user management, ride tracking, and notifications.
+4. Testing
+Activities:
+Unit Testing:
+Test individual components (e.g., user authentication, SOS triggers).
+Integration Testing:
+Verify interactions between client-side and backend APIs.
+System Testing:
+Test the application in a production-like environment.
+User Acceptance Testing (UAT):
+Gather feedback from a small group of beta testers.
+Security Testing:
+Ensure encryption for user data and secure API communication.
+Deliverables:
+Test case documents.
+Bug reports and resolved issues.
+UAT approval.
+5. Deployment
+Activities:
+Prepare production environment:
+Configure servers for Node.js and MongoDB.
+Use cloud hosting (e.g., AWS, Azure) for scalability.
+Publish the mobile app on platforms:
+Android: Google Play Store.
+iOS: Apple App Store.
+Deliverables:
+Deployed backend server and database.
+Published mobile application.
+6. Maintenance
+Activities:
+Monitor performance and resolve bugs.
+Release updates for new features or platform changes (e.g., cab API updates).
+Maintain scalability and security standards.
+Deliverables:
+Regular app updates.
+Maintenance reports.
+SDLC Timeline (Sample)
+Phase	Duration	Deliverable
+Planning	2 weeks	SRS, Roadmap
+System Design	3 weeks	Architecture diagrams, Wireframes
+Development	8 weeks (4 sprints)	Application modules
+Testing	3 weeks	Test reports, UAT approval
+Deployment	1 week	Live application
+Maintenance	Ongoing	Updates and support
+Agile Iterations
+Sprint Duration: 2 weeks.
+Scrum Meetings: Daily stand-ups to discuss progress and blockers.
+Review and Retrospective: At the end of each sprint to refine the next sprint.

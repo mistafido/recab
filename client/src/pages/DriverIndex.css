@@ -1,0 +1,58 @@
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7fcfb;
+}
+
+.logo-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.welcome-text {
+  text-align: center;
+  color: #333;
+}
+
+.welcome-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  margin-top: 8px;
+  color: #444;
+}
+
+.button-group {
+  width: 100%;
+  padding: 40px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-button {
+  --background: #ffeb00;
+  --color: #000;
+  width: 80%;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.create-account-link {
+  color: #444;
+  font-size: 1rem;
+  text-align: center;
+}

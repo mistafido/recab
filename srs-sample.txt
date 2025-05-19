@@ -1,0 +1,82 @@
+Software Requirements Specification (SRS) for "Cab Guardian App"
+1. Introduction
+1.1 Purpose
+The purpose of this document is to define the software requirements for "Cab Guardian," a mobile application that enhances security for users of cab booking platforms. The application tracks rides and sends driver and ride details to pre-registered SOS contacts in case of emergencies.
+
+1.2 Scope
+Cab Guardian is a cross-platform mobile application built using Ionic JS for the client-side and Node.js for the backend. The app integrates with cab booking platforms like Uber to retrieve ride details and provides the following features:
+
+Real-time ride tracking.
+Automated sharing of driver and ride details with SOS contacts.
+SOS alert system.
+1.3 Definitions
+SOS Contact: A pre-registered contact notified in case of an emergency.
+Ride Details: Information about the driver and vehicle, such as name, vehicle type, and license plate.
+2. System Overview
+The system comprises two main components:
+
+Mobile Application: A front-end interface for users to register, manage contacts, and track rides.
+Backend Service: A Node.js server handling user data, SOS alerts, and ride tracking integration.
+3. Functional Requirements
+3.1 User Management
+Sign-Up and Login: Users can register and log in using email or phone numbers.
+Profile Management: Update personal details and manage SOS contacts.
+3.2 Ride Tracking
+Integration: Retrieve ride details from supported cab platforms using APIs.
+Real-Time Location: Continuously track the user's location during a ride.
+3.3 SOS Alerts
+Automated Alerts: Automatically send an SOS with driver details when triggered.
+Manual SOS: Allow users to send an SOS manually through the app.
+3.4 Notifications
+Emergency Notifications: Notify SOS contacts via SMS or email in emergencies.
+In-App Alerts: Alert users about ride updates and potential issues.
+3.5 Security
+Data Encryption: Encrypt user data and ride details during storage and transmission.
+Authentication: Use JWT for secure API communication.
+4. Non-Functional Requirements
+4.1 Performance
+Handle up to 1,000 concurrent users per server instance.
+SOS alerts must be sent within 5 seconds of being triggered.
+4.2 Scalability
+Design backend services to support horizontal scaling for high traffic.
+4.3 Usability
+Intuitive UI with clear instructions for all features.
+4.4 Reliability
+99.9% uptime for backend services.
+4.5 Platform Compatibility
+iOS and Android compatibility.
+5. System Architecture
+5.1 Client-Side (Ionic JS)
+User interface for registration, ride tracking, and SOS features.
+Geolocation services for real-time ride tracking.
+5.2 Backend (Node.js)
+RESTful APIs for user management, ride integration, and SOS handling.
+Database: MongoDB for user data and ride details.
+5.3 Third-Party Integrations
+Cab booking platforms APIs (e.g., Uber API).
+SMS and email services for SOS alerts.
+6. Data Requirements
+6.1 Database Schema
+Users: User profile, login credentials, and SOS contacts.
+Rides: Driver name, vehicle details, license plate, and ride duration.
+Alerts: SOS messages, timestamps, and recipient details.
+6.2 Data Retention
+Retain ride data for 30 days for security purposes.
+7. User Interface Requirements
+Home Screen: Overview of active rides and manual SOS button.
+Contacts Screen: Manage SOS contacts.
+Settings Screen: Update profile and app preferences.
+8. Constraints
+Internet connection is required for real-time tracking and notifications.
+Limited to supported cab platforms with accessible APIs.
+9. Risks
+Potential delays in SOS notifications due to network issues.
+Dependency on third-party APIs for ride details.
+10. Acceptance Criteria
+Successful integration with at least one cab platform.
+Real-time tracking accuracy within 5 meters.
+Notifications delivered to SOS contacts in under 5 seconds.
+11. Glossary
+Ionic JS: Framework for building cross-platform mobile apps.
+Node.js: JavaScript runtime for backend services.
+API: Application Programming Interface.
