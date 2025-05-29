@@ -30,7 +30,9 @@ import notificationRoutes from "./routes/notificationRoutes.js"
 app.get("/api", (req, res) => {
   res.status(200).json({ message: "Welcome to the API" });
 });
-
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Welcome to the API" });
+});
 app.use("/api/users", userRoutes);
 app.use("/api/riders", riderRoutes);
 app.use("/api/drivers", driverRoutes);
